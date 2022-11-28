@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from principal.views import index
 from secundaria.views import secundaria
+from terciaria.views import terciaria
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('secundaria/', secundaria),
+    path('terciaria/', terciaria),
 ]
